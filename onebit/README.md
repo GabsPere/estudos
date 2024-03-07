@@ -1,0 +1,2 @@
+Nessa pasta há meus códigos feitos em Python sobre tutoria do curso de programção da OneBit.A organização nas pastas dos módulos funciona da seguinte forma:
+os exercícios sempre têm a numeração antes do nome, exemplo: 1-tupla. Os desafios por sua vez não possuem numeração, são nomeados, em inglês, seguindo a ordem, exemplo: One, Two, Three. Dentro dos arquivos há comentários para guiar a leitura do código.
