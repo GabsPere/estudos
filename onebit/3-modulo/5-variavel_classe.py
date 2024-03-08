@@ -1,4 +1,5 @@
-# Criar uma funcionalidade que permite o usuário avaliar o filme e retorna a média de avaliação.
+# Uma variável de classe tem como objetivo definir uma característica em comum para TODOS os objetos
+# que forem instânciados
 
 # Variáveis globais
 done = False
@@ -33,18 +34,22 @@ media = nota_total / avaliadores
 
 # Metódo para retornar todas informações em um único print.
 class Movie:
-    def __init__(self,nome,ano,media,duracao): # -> Self signfica que recebe os atributos
+       plataforma = "Thor e Jack Filmes"
+ # -> Uma variável de classe sempre vem antes dos metódos
+ # Pode ser alterada a qualquer momento usando " Movie.plataforma ="
+       def __init__(self,nome,ano,media,duracao): # -> Self signfica que recebe os atributos
         self.nome = nome
         self.ano = ano
         self.duracao = duracao
         self.nota = media # -> Precisamos criar a classe Movie com o atributo self para inseri-lo na ficha tecnica
 
-    def ficha_tecnica(self):
-        print("##Dados do filme##")
-        print(f"Nome do filme: {nome_filme.title()}")
-        print(f"Ano de lançamento: {ano_filme}")
-        print(f"Nota do filme: {media:.2f}")
-        print(f"Duração do filme: {duracao_filme} minutos")
+        def ficha_tecnica(self):
+            print("##Dados do filme##")
+            print(f"Nome do filme: {nome_filme.title()}")
+            print(f"Ano de lançamento: {ano_filme}")
+            print(f"Duração do filme: {duracao_filme} minutos")
+            print(f"Disponível na plataforma {Movie.plataforma}")
+            print(f"Nota do filme: {media:.2f}")
 
 filme = Movie(nome_filme,ano_filme,media,duracao_filme)
 filme.ficha_tecnica()
