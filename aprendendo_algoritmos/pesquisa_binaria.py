@@ -1,15 +1,15 @@
 def pesquisa_binaria(lista,item):
     baixo = 0
-    alto = len(lista) - 1
+    alto = len(lista) - 1 
 
     while baixo <= alto:
-        media = (baixo+alto) / 2 # -> Igual a 4/2, pois pega a quantidade de itens.
+        media = (baixo+alto) / 2 # -> Igual a n/2, sempre pegará o item do meio, pois arrendonda.
         meio = int(media) # -> Precisei converter o float em int para conseguir fazer a iteração.
-        chute = lista[meio] # -> lista[2] pegando o item 5, literalmente o meio. Mas retornar o índice.
+        chute = lista[meio] # -> lista[2] Literalmente o meio. Mas retornar o índice.
         if chute == item:
-            return meio # -> Retorna o índice 2.
+            return meio # -> Retorna o número do meio.
         if chute > item:
-            alto = meio -1 # Retorna o indíce 1 ou 0.
+            alto = meio -1 # Retorna o indíce 1 ou 0. Conta será o índice depois.
         else:
             baixo = meio + 1 # Retorna o índice 3 ou 4.
     return None
