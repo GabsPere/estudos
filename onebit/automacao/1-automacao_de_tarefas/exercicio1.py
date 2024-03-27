@@ -2,7 +2,6 @@
 Correção do exercício One, segundo o instrutor.
 '''
 
-
 import os
 
 def organize_files():
